@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --primary-50: #eef2ff;
+  --primary-100: #e0e7ff;
+  --primary-200: #c7d2fe;
+  --primary-400: #818cf8;
+  --primary-500: #6366f1;
+  --primary-600: #4f46e5;
+  --primary-700: #4338ca;
+  --primary-glow: rgba(99, 102, 241, 0.35);
+
+  --success: #10b981;
+  --success-bg: rgba(16, 185, 129, 0.12);
+  --warning: #f59e0b;
+  --warning-bg: rgba(245, 158, 11, 0.12);
+  --danger: #ef4444;
+  --danger-bg: rgba(239, 68, 68, 0.12);
+  --info: #06b6d4;
+  --info-bg: rgba(6, 182, 212, 0.12);
+
+  --bg-page: #080b13;
+  --bg-gradient: radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.12) 0%, transparent 40%),
+                 radial-gradient(circle at 85% 85%, rgba(6, 182, 212, 0.08) 0%, transparent 40%),
+                 #080b13;
+  --bg-surface: #0f1422;
+  --bg-surface-elevated: #161d30;
+  --bg-surface-glass: rgba(15, 20, 34, 0.78);
+  --bg-surface-translucent: rgba(22, 29, 48, 0.6);
+  --bg-input: #0a0e19;
+  --bg-input-focus: #0c111e;
+  
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --border-focus: var(--primary-500);
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-tertiary: #64748b;
+  --text-inverse: #0b0f19;
+
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.65);
+  --shadow-card: 0 16px 48px -8px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.08);
+
+  --card-blur: blur(16px);
+  --badge-bg: rgba(99, 102, 241, 0.15);
+  --badge-border: rgba(99, 102, 241, 0.3);
+  --badge-text: #a5b4fc;
+}
+
+#theme-toggle:checked ~ .app-wrapper {
+  --bg-page: #f8fafc;
+  --bg-gradient: radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.08) 0%, transparent 45%),
+                 radial-gradient(circle at 85% 85%, rgba(6, 182, 212, 0.06) 0%, transparent 45%),
+                 #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #f1f5f9;
+  --bg-surface-glass: rgba(255, 255, 255, 0.85);
+  --bg-surface-translucent: rgba(241, 245, 249, 0.8);
+  --bg-input: #ffffff;
+  --bg-input-focus: #ffffff;
+
+  --border-subtle: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --border-focus: var(--primary-600);
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-tertiary: #94a3b8;
+  --text-inverse: #ffffff;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.12);
+  --shadow-card: 0 20px 40px -12px rgba(15, 23, 42, 0.1), 0 0 0 1px #e2e8f0;
+
+  --badge-bg: #eef2ff;
+  --badge-border: #c7d2fe;
+  --badge-text: #4338ca;
+}

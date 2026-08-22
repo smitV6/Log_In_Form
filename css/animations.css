@@ -1,0 +1,33 @@
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes modalPop { 0% { opacity: 0; transform: scale(0.94) translateY(12px); } 100% { opacity: 1; transform: scale(1) translateY(0); } }
+@keyframes pulseGlow { 0%, 100% { box-shadow: 0 0 0 0 var(--primary-glow); } 50% { box-shadow: 0 0 0 8px transparent; } }
+@keyframes scannerSweep { 0% { top: 0%; opacity: 0.2; } 50% { top: 95%; opacity: 1; } 100% { top: 0%; opacity: 0.2; } }
+@keyframes rippleRing { 0% { transform: scale(0.85); opacity: 0.8; } 100% { transform: scale(1.35); opacity: 0; } }
+
+@keyframes orbDrift1 {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(60px, -40px) scale(1.12); }
+  66% { transform: translate(-40px, 50px) scale(0.95); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes orbDrift2 {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-70px, 50px) scale(1.15); }
+  66% { transform: translate(50px, -60px) scale(0.92); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes orbDrift3 {
+  0% { transform: translate(0, 0) scale(0.95); opacity: 0.35; }
+  50% { transform: translate(40px, 40px) scale(1.2); opacity: 0.6; }
+  100% { transform: translate(0, 0) scale(0.95); opacity: 0.35; }
+}
+
+@keyframes gridFloat {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(40px); }
+}
+
+.scanner-beam { position: absolute; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--info), transparent); box-shadow: 0 0 10px var(--info); animation: scannerSweep 2.5s ease-in-out infinite; }
+.pulse-ring { position: absolute; inset: -6px; border-radius: 50%; border: 2px solid var(--primary-400); animation: rippleRing 2s cubic-bezier(0, 0.2, 0.8, 1) infinite; pointer-events: none; }
